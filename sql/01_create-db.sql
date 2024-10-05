@@ -23,7 +23,7 @@ CREATE TABLE szerzo (
 CREATE TABLE konyv (
     konyv_id SERIAL NOT NULL,
     konyv_cim VARCHAR(255) NOT NULL,
-    szerzo_id INT REFERENCES szerzo(szerzo_id) ON DELETE SET NULL,
+    szerzo_id INT REFERENCES szerzo(szerzo_id) ON DELETE CASCADE,
     ar NUMERIC(10, 2) NOT NULL,
     keszlet INT CHECK (keszlet >= 0),
     elerheto BOOLEAN DEFAULT TRUE,
