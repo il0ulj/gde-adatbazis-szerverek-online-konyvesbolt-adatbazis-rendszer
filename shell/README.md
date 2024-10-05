@@ -11,5 +11,5 @@ Használt operációs rendszer: Ubuntu 24.04 LTS
 ```
 ## PgHero konténer futtatása (opcionális)
 ```
-03_run_pghero_container.sh
+./03_run_pghero_container.sh
 ```
