@@ -21,7 +21,6 @@ SELECT
     TRUE
 FROM generate_series(1, 10000) AS s(i);
 
-
 --- vasarlo tábla feltöltése
 
 INSERT INTO vasarlo (nev, email, tel_szam)
