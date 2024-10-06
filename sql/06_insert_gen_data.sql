@@ -62,8 +62,8 @@ INSERT INTO rendelesi_tetel (rendeles_id, konyv_id, rend_mennyseg, tetel_ar)
 SELECT
     r.rendeles_id,
     k.konyv_id,
-    LEAST(FLOOR(RANDOM() * 5) + 1, k.keszlet) AS rend_mennyseg,
-    ROUND((RANDOM() * 10000)::NUMERIC, 2)
+    FLOOR(RANDOM() * 5) + 1 AS rend_mennyseg,
+    FLOOR(RANDOM() * 9001 + 1000)::INT AS tetel_ar
 FROM
     rendelesek r
 JOIN (
