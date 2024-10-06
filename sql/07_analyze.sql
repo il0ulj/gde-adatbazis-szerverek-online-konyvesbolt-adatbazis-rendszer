@@ -9,10 +9,10 @@ SELECT
     v.nev AS vasarlo_nev,
     v.email AS vasarlo_email,
     r.rend_datum AS rendeles_datum,
-    r.rend_statusz AS Rendezes_Statusz,
-    k.konyv_cim AS Konyv_Cime,
-    rt.tetel_ar AS Konyv_Ar,
-    rt.rend_mennyseg AS Rendelesi_Mennyiseg
+    r.rend_statusz AS rendeles_statusz,
+    k.konyv_cim AS konyv_cim,
+    rt.tetel_ar AS konyv_ar,
+    rt.rend_mennyseg AS rendelesi_mennyiseg
 FROM
     vasarlo v
 JOIN
